@@ -1,6 +1,6 @@
 <div class="chatContainer">
     <p [ngClass]="{'local': message.messageType === 1,'remote': message.messageType=== 2}" class="local"
-        *ngFor="let message of chat.chats">{{message.text}}</p>
+        *ngFor="let message of chat.chats">{{message.text}}{{message.user}}</p>
 </div>
 
 <div calss="inputContainer">
